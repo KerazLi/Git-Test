@@ -1,1 +1,6 @@
 git test
+git log 
+        --all 显示所有分支
+        --pretty=oneline 提交信息为一行
+        --abbrev-commit 是输出的commit更简短
+        --graph  输出为图表
