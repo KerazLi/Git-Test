@@ -34,3 +34,4 @@ git push origin 本地分支   推送到远程分支
 git fetch  [remote name] [branch name] 抓取分支
 注意：抓取的最新的代码不会自己合并，需要自己合并
 git pull [remote name] [branch name] 将远程仓库的代码更新到自己本地，比fetch更好用
+注意：工作的时候记得提交代码给远程仓库一定要先拉取最新代码，再推送自己的代码，不然会远程仓库冲突。
