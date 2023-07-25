@@ -14,4 +14,5 @@ git branch -d 分支名  删除分支（需要检查）
 git branch -D 分支名  强制删除
 git checkout 分支名  切换分支
 git checkout -b 分支名 创建并切换分支
-git remote origin （远程仓库的名字） master (本地分支的名字)
+git remote add 仓库名 添加远程仓库
+git remote origin （远程仓库的名字） master (本地分支的名字) 推送远程仓库
