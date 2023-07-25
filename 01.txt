@@ -10,3 +10,5 @@ git reflog  查看删除的日志
 git reset --hard commitID(914d1aa) 回退版本
 git branch  查看本地分支
 git branch 分支名 创建分支
+git checkout 分支名  切换分支
+git checkout -b 分支名 创建并切换分支
