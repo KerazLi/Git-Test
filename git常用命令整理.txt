@@ -1,0 +1,36 @@
+git常用命令
+git config --global user.name  "用户名" 设置用户名
+git config --global user.email "邮箱名" 设置邮箱名
+ssh-keygen -t rsa  创建密匙
+cat ~/.ssh/id_rsa.pub 获取公匙
+git clone 地址 克隆仓库到本地
+git init  仓库初始化
+git add .  添加缓存区
+git log   查看日志
+        --all 显示所有分支
+        --pretty=oneline 提交信息为一行
+        --abbrev-commit 是输出的commit更简短
+        --graph  输出为图表
+git reflog  查看删除的日志
+git reset --hard commitID(914d1aa) 回退版本
+git branch  查看本地分支
+git branch 分支名 创建分支
+git branch -v 查看本地分支
+git branch -vv 查看更细的分支 （哪个分支与远程关联）
+git branch -d 分支名  删除分支（需要检查）
+git branch -D 分支名  强制删除
+git checkout 分支名  切换分支
+git checkout -b 分支名 创建并切换分支
+git remote add 仓库名 添加远程仓库
+git remote origin （远程仓库的名字） master (本地分支的名字) 推送远程仓库
+ssh-keygen -t rsa  创建密匙
+cat ~/.ssh/id_rsa.pub 获取公匙
+git push origin 本地分支   推送到远程分支
+        -f origin 本地分支 强制覆盖
+        --set-upstream origin 本地分支名(master)：远程分支名(master)  与远程分支关联下次可以直接 git push 
+        注意：本地分支名与远程分支名一样不然会报错
+        eg: git push --set-upstream origin master:master(main)
+        origin -delete 远程分支名  删除远程分支名
+git fetch  [remote name] [branch name] 抓取分支
+注意：抓取的最新的代码不会自己合并，需要自己合并
+git pull [remote name] [branch name] 将远程仓库的代码更新到自己本地，比fetch更好用
